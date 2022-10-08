@@ -27,6 +27,8 @@ flex-flow:row;
 justify-content: space-evenly;
 box-sizing: border-box;
 width: 25%;
+
+
 `
 const HeaderDiv=styled.div`
 display:flex;
