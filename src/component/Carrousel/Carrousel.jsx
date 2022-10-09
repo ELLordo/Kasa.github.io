@@ -28,7 +28,7 @@ background-color = #000000
 const ImgCarrousel = styled.img`
 border-radius:25px;
 width: 80%;
-height: 415px;
+height: 550px;
 object-fit: cover;
 margin: 100px 10% 50px 10%;
 position: static;
@@ -36,7 +36,7 @@ position: static;
 const FlecheDirect = styled.div`
 display:flex;
 z-index:1;
-margin-top:-300px;
+margin-top:-350px;
 box-sizing: border-box;
 width: 75%;
 justify-content: space-between;
@@ -48,10 +48,9 @@ font-style: normal;
 font-weight: 500;
 font-size: 18px;
 line-height: 142.6%;
-/* or 26px */
 
 display: flex;
-margin-top: 100px;
+margin-top: 150px;
 box-sizing: border-box;
 width: 100%;
 justify-content: center;
@@ -59,7 +58,10 @@ justify-content: center;
 color: #FFFFFF;
 `
 
-  return (
+  return (pictures.length === 1)  ? ( <section>
+    <ImgCarrousel src={pictures[currentIndex]} alt="" />
+    </section>
+  ) : (
     <section>
     <ImgCarrousel src={pictures[currentIndex]} alt="" />
     <FlecheDirect>
@@ -80,7 +82,7 @@ color: #FFFFFF;
         {currentIndex + 1}/{pictures.length}
       </NombreImg>
     </section>
-  );
+  ) 
 };
 
 export default Carousel;
