@@ -21,8 +21,10 @@ const Carousel = (props) => {
   };
 
 const FlecheSty =styled.img`
-
-background-color = #000000
+@media (max-width: 960px) {
+  width:12px;
+  height:20px;
+}
 `
 
 const ImgCarrousel = styled.img`
@@ -32,6 +34,11 @@ height: 550px;
 object-fit: cover;
 margin: 100px 10% 50px 10%;
 position: static;
+@media (max-width: 960px) {
+  width:100%;
+  height:255px;
+  margin: 40px 0px 30px 0px;
+}
 `
 const FlecheDirect = styled.div`
 display:flex;
@@ -41,21 +48,26 @@ box-sizing: border-box;
 width: 75%;
 justify-content: space-between;
 margin-left: 12%;
+@media (max-width: 960px) {
+  margin-top:-170px;
+}
 `
+
 const NombreImg=styled.span`
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
 font-size: 18px;
 line-height: 142.6%;
-
 display: flex;
 margin-top: 150px;
 box-sizing: border-box;
 width: 100%;
 justify-content: center;
-
 color: #FFFFFF;
+@media (max-width: 960px) {
+  display:none;
+}
 `
 
   return (pictures.length === 1)  ? ( <section>

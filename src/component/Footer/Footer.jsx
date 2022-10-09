@@ -13,12 +13,15 @@ Height:209px;
 `
 
 const BackImg =styled.img`
-
 display: flex;
 justify-content: center;
 width: 122px;
 height: 40px;
 padding-top:40px;
+@media (max-width: 960px) {
+  width:30%;
+  height:40px;
+}
 `
 const FooterText = styled.p`
 
@@ -31,6 +34,9 @@ display: flex;
 align-items: flex-end;
 text-align: center;
 color: #FFFFFF;
+@media (max-width: 960px) {
+  font-size:12px;
+}
 `
 
 function Footer() {

@@ -12,6 +12,10 @@ align-items: center;
 text-align: center;
 justify-content:center;
 color: #FF6060;
+@media (max-width: 960px) {
+  font-size:96px;
+  margin-top:100px;
+}
 `
 const ParagErr = styled.span`
 font-family: 'Montserrat';
@@ -19,12 +23,15 @@ font-style: normal;
 font-weight: 500;
 font-size: 36px;
 line-height: 142.6%;
-/* or 51px */
-
 display: flex;
 align-items: flex-end;
 justify-content:center;
 color: #FF6060;
+@media (max-width: 960px) {
+  font-size:18px;
+  text-align:center;
+  
+}
 `
 const LinkErr = styled(Link)`
 font-family: 'Montserrat';
@@ -32,14 +39,15 @@ font-style: normal;
 font-weight: 500;
 font-size: 18px;
 line-height: 142.6%;
-/* identical to box height, or 26px */
-
 display: flex;
 align-items: flex-end;
 text-decoration-line: underline;
 justify-content:center;
 color: #FF6060;
 margin:150px 0px 100px 0px;
+@media (max-width: 960px) {
+  font-size:14px;
+}
 `
 
 const GeneralErr = styled.div`

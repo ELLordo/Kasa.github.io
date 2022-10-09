@@ -7,9 +7,14 @@ import flecheBas from '../component/Asset/flecheBas.svg'
 const PropoImg = styled.img`
 border-radius: 25px;
 width:90%;
+object-fit:cover;
 background: #000000;
 mix-blend-mode: darken;
 filter: brightness(70%);
+@media (max-width: 960px) {
+  width:100%;
+  height:223px;
+}
 `
 const ImgDiv =styled.div`
 display:flex;
@@ -20,6 +25,9 @@ const CollaspDiv = styled.div`
 display:block;
 margin: 50px 12%;
 max-width:80%;
+@media (max-width: 960px) {
+  width:90%;
+}
 `
 const CollaspPara = styled.p`
 font-family: 'Montserrat';
@@ -47,7 +55,11 @@ border:0;
 width:100%;
 margin-top:20px;
 justify-content:space-between;
+@media (max-width: 960px) {
+  
+}
 `
+
 const CollaspTitleB = styled.p`
 display:flex;
 margin:0;

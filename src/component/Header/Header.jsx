@@ -4,7 +4,12 @@ import { Link } from "react-router-dom";
 
 const ImgHeader = styled.img`
 padding-top:40px;
-padding-left:40px
+padding-left:40px;
+@media (max-width: 960px) {
+width:40%;
+height:47px;
+background-color: #00000;
+}
 `
 
 const LinkHeaderA = styled(Link)`
@@ -24,6 +29,10 @@ color: #FF6060;
 
 &:hover{
   text-decoration:underline;
+}
+
+@media (max-width: 960px) {
+  font-size:12px;
 }
 `
 
@@ -45,6 +54,9 @@ color: #FF6060;
 &:hover{
   text-decoration:underline;
 }
+@media (max-width: 960px) {
+  font-size:12px;
+}
 `
 
 const NavHeader= styled.nav`
@@ -53,6 +65,9 @@ flex-flow:row;
 justify-content: space-evenly;
 box-sizing: border-box;
 width: 25%;
+@media (max-width: 960px) {
+  width:32%;
+}
 `
 
 const HeaderDiv=styled.div`

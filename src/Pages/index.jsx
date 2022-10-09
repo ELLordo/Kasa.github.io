@@ -10,13 +10,20 @@ border-radius: 25px;
 width:100%;
 background: #000000;
 mix-blend-mode: darken;
-filter: brightness(70%)
+filter: brightness(70%);
+@media (max-width: 960px) {
+  width:100%;
+  height:150px;
+}
 `
 
 const DivHome = styled.div`
 display:flex;
 justify-content:center;
 margin:60px;
+@media (max-width: 960px) {
+  margin:10% 3% 10% 3%;
+}
 `
 
 const TitreHome = styled.h1`
@@ -28,6 +35,11 @@ font-size: 48px;
 line-height: 142.6%;
 margin-top: 6%;
 color: #FFFFFF;
+@media (max-width: 960px) {
+  font-size:24px;
+  width:40%;
+  margin-left:-35%;
+}
 `
 
 const CardGeneral= styled.div`
@@ -35,6 +47,9 @@ display:flex;
 flex-flow:row wrap;
 columns : auto 3;
 justify-content:space-evenly;
+@media (max-width: 960px) {
+  flex-flow:column;
+}
 `
 
 const CardSpe = styled.div`
@@ -54,7 +69,12 @@ height:400px;
 width: 27%;
 margin:10px 10px 40px 10px;
 border-radius:10px;
-text-decoration:none;`
+text-decoration:none;
+@media (max-width: 960px) {
+  width:100%;
+  margin:0 0 40px 0;
+}
+`
 
 const CardImg = styled.img`
 display:flex;
