@@ -53,7 +53,7 @@ function Erreur() {
     <GeneralErr >
       <NumeroErr>404</NumeroErr>
       <ParagErr>Oups! La page que vous demandez n'existe pas.</ParagErr>
-      <LinkErr path='/'>Retourner sur la page d’accueil</LinkErr>
+      <LinkErr to="/">Retourner sur la page d’accueil</LinkErr>
     </GeneralErr>
   );
 }
