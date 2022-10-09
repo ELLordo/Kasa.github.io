@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import BannerP from '../component/Asset/BannerP.png'
 import { useState } from 'react'
+import flecheHaut from '../component/Asset/flecheHaut.svg'
+import flecheBas from '../component/Asset/flecheBas.svg'
 
 const PropoImg = styled.img`
 border-radius: 25px;
@@ -15,8 +17,9 @@ justify-content:center;
 margin: 60px 0px 60px 0px;
 `
 const CollaspDiv = styled.div`
-display:flex;
+display:block;
 margin: 50px 12%;
+max-width:80%;
 `
 const CollaspPara = styled.p`
 font-family: 'Montserrat';
@@ -27,7 +30,6 @@ line-height: 142.6%;
 color: #FF6060;
 display:flex;
 justify-content:center;
-
 `
 
 const CollaspButton= styled.button`
@@ -44,9 +46,11 @@ border-radius: 5px;
 border:0;
 width:100%;
 margin-top:20px;
-&::before {
-  width:100%
-}
+justify-content:space-between;
+`
+const CollaspTitleB = styled.p`
+display:flex;
+margin:0;
 `
 
 const CollapsePropos =() => {
@@ -74,7 +78,17 @@ const CollapsePropos =() => {
   return(
     <div>
     <div>
-      <CollaspButton onClick={toggleF}>Fiabilité</CollaspButton>
+      <CollaspButton onClick={toggleF}>
+        <CollaspTitleB>Fiabilité</CollaspTitleB>
+        <div>
+          {/* Changer le sens de la flèche quand le contenu est ouvert ou fermé */}
+          {openF === true ? (
+            <img src={flecheHaut} alt="Flèche vers le haut" />
+          ) : (
+            <img src={flecheBas} alt="Flèche vers le bas" />
+          )}
+        </div>
+      </CollaspButton>
       {openF && (
       <div >
         <CollaspPara>Les annonces postées sur Kasa garantissent une fiabilité totale.
@@ -84,7 +98,17 @@ const CollapsePropos =() => {
     </div>
 
     <div>
-      <CollaspButton onClick={toggleR}>Respect</CollaspButton>
+      <CollaspButton onClick={toggleR}>
+        <CollaspTitleB>Respect</CollaspTitleB>
+        <div>
+          {/* Changer le sens de la flèche quand le contenu est ouvert ou fermé */}
+          {openR === true ? (
+            <img src={flecheHaut} alt="Flèche vers le haut" />
+          ) : (
+            <img src={flecheBas} alt="Flèche vers le bas" />
+          )}
+        </div>
+        </CollaspButton>
       {openR && (
       <div >
         <CollaspPara>La bienveillance fait partie des valeurs fondatrices de Kasa.
@@ -94,7 +118,17 @@ const CollapsePropos =() => {
     </div>
 
     <div>
-      <CollaspButton onClick={toggleSE}>Service</CollaspButton>
+      <CollaspButton onClick={toggleSE}>
+        <CollaspTitleB>Service</CollaspTitleB>
+        <div>
+          {/* Changer le sens de la flèche quand le contenu est ouvert ou fermé */}
+          {openSE === true ? (
+            <img src={flecheHaut} alt="Flèche vers le haut" />
+          ) : (
+            <img src={flecheBas} alt="Flèche vers le bas" />
+          )}
+        </div>
+        </CollaspButton>
       {openSE && (
       <div >
         <CollaspPara>Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. 
@@ -104,7 +138,17 @@ const CollapsePropos =() => {
     </div>
 
       <div>
-      <CollaspButton onClick={toggleSEC}>Sécurité</CollaspButton>
+      <CollaspButton onClick={toggleSEC}>
+        <CollaspTitleB>Sécurité</CollaspTitleB>
+        <div>
+          {/* Changer le sens de la flèche quand le contenu est ouvert ou fermé */}
+          {openSEC === true ? (
+            <img src={flecheHaut} alt="Flèche vers le haut" />
+          ) : (
+            <img src={flecheBas} alt="Flèche vers le bas" />
+          )}
+        </div>
+        </CollaspButton>
       {openSEC && (
       <div >
         <CollaspPara>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services.
