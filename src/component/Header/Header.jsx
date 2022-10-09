@@ -6,7 +6,7 @@ const ImgHeader = styled.img`
 padding-top:40px;
 padding-left:40px`
 
-const LinkHeader = styled(Link)`
+const LinkHeaderA = styled(Link)`
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
@@ -20,6 +20,30 @@ align-items: flex-end;
 text-align: right;
 
 color: #FF6060;
+
+&:hover{
+  text-decoration:underline;
+}
+`
+
+const LinkHeaderP = styled(Link)`
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 142.6%;
+
+display: flex;
+flex-flow:row;
+text-decoration:none;
+align-items: flex-end;
+text-align: right;
+
+color: #FF6060;
+
+&:hover{
+  text-decoration:underline;
+}
 `
 const NavHeader= styled.nav`
 display:flex;
@@ -41,8 +65,8 @@ function Header() {
     <HeaderDiv >
       <ImgHeader src={LogoP} alt="Logo Kasa" />
       <NavHeader>
-      <LinkHeader to="/">Accueil</LinkHeader>
-      <LinkHeader to="/apropos">A Propos</LinkHeader>
+      <LinkHeaderA to="/">Accueil</LinkHeaderA>
+      <LinkHeaderP to="/apropos">A Propos</LinkHeaderP>
       </NavHeader>
     </HeaderDiv>
   );

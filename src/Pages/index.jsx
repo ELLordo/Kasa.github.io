@@ -67,7 +67,7 @@ const CardFiltre = styled.div`
 display:flex;
 position:absolute;
 height:400px;
-width: 25.6%;
+width: 25.%;
 background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 border-radius:10px;
 `
@@ -89,10 +89,10 @@ z-index:1
 function Card({id, cover, title}) {
     return (
         <CardSpe >
-          <CardFiltre />
+          
             <CardImg src={cover} alt="freelance" />
             
-            <CardTitle>{title}</CardTitle>
+            <CardTitle>{title}</CardTitle><CardFiltre />
         </CardSpe>
     )
 }
