@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 
 const ImgHeader = styled.img`
 padding-top:40px;
-padding-left:40px`
+padding-left:40px
+`
 
 const LinkHeaderA = styled(Link)`
 font-family: 'Montserrat';
@@ -45,15 +46,15 @@ color: #FF6060;
   text-decoration:underline;
 }
 `
+
 const NavHeader= styled.nav`
 display:flex;
 flex-flow:row;
 justify-content: space-evenly;
 box-sizing: border-box;
 width: 25%;
-
-
 `
+
 const HeaderDiv=styled.div`
 display:flex;
 flex-flow:row;

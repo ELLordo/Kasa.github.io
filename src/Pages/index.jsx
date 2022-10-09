@@ -47,7 +47,6 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5
 border-radius:10px;
 text-decoration:none;
 `
-const Appartement = BDD
 
 const CardLink = styled(Link)`
 display:flex;
@@ -85,6 +84,8 @@ color: #FFFFFF;
 margin-top:-60px;
 z-index:1
 `
+
+const Appartement = BDD
 
 function Card({id, cover, title}) {
     return (
