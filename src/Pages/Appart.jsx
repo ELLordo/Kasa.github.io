@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { useParams  } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import BDD from "../component/JSON/BDD";
 import PropTypes from "prop-types"
 import EtoileP from '../component/Asset/EtoileP.svg'
@@ -9,6 +9,7 @@ import styled from 'styled-components'
 import Carrousel from '../component/Carrousel/Carrousel'
 import flecheHaut from '../component/Asset/flecheHaut.svg'
 import flecheBas from '../component/Asset/flecheBas.svg'
+import Erreur from './Erreur404'
 
 const NameAppart= styled.span`
 font-family: 'Montserrat';
@@ -275,7 +276,6 @@ host:PropTypes.string,
 function Appart({props, title, cover, pictures, description, rating, location, equipments, tags, index}) {
 const { id } = useParams();
 const profile = BDD.find((item) => item.id === id)
-console.log(profile.description)
 const stars = [];
   for (let i = 0; i < 5; i++) {
     if (i < profile.rating) {
@@ -343,7 +343,7 @@ const stars = [];
     </CollaspGeneral>
   )
 }
-  return(
+  return(profile) ?(
   <div>
     <Carrousel pictures={profile.pictures} />
 
@@ -380,7 +380,8 @@ const stars = [];
 
     <CollaspAppart />  
   </div>
-)
+):( <Navigate push to="/Err" />
+  )
 }
  Appart.propTypes = {
   title:PropTypes.string,
