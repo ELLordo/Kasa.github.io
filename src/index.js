@@ -7,7 +7,7 @@ import Erreur from './Pages/Erreur404'
 import Propos from './Pages/APropos'
 import Footer from './component/Footer/Footer'
 import { BrowserRouter, Routes,  Route} from "react-router-dom"
-
+import './component/html.css'
 
 const root = ReactDOMClient.createRoot(document.getElementById('root'));
 root.render(

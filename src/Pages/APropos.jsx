@@ -12,22 +12,22 @@ background: #000000;
 mix-blend-mode: darken;
 filter: brightness(70%);
 @media (max-width: 960px) {
-  width:100%;
+  width:95%;
   height:223px;
 }
 `
 const ImgDiv =styled.div`
 display:flex;
 justify-content:center;
-margin: 60px 0px 60px 0px;
+margin: 40px 0px 60px 0px;
 `
 const CollaspDiv = styled.div`
 display:block;
 margin: 50px 12%;
 max-width:80%;
 @media (max-width: 960px) {
-  width:90%;
-  margin-top:-30px;
+  max-width:100%;
+  margin:-30px 2.5% 0px 2.5%;
 }
 `
 const CollaspPara = styled.p`
@@ -39,7 +39,7 @@ line-height: 142.6%;
 color: #FF6060;
 display:flex;
 justify-content:center;
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   font-size:12px;
 }
 `
@@ -67,6 +67,10 @@ justify-content:space-between;
 const CollaspTitleB = styled.p`
 display:flex;
 margin:0;
+@media (max-width: 960px) {
+  margin-left:10px;
+  height:20px;
+}
 `
 const ImgFleche=styled.img`
 @media (max-width: 960px) {

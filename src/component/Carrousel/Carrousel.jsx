@@ -29,15 +29,15 @@ const FlecheSty =styled.img`
 
 const ImgCarrousel = styled.img`
 border-radius:25px;
-width: 80%;
+width: 90%;
 height: 550px;
 object-fit: cover;
-margin: 100px 10% 50px 10%;
+margin: 100px 5% 50px 5%;
 position: static;
 @media (max-width: 960px) {
-  width:100%;
+  width:95%;
   height:255px;
-  margin: 40px 0px 30px 0px;
+  margin: 40px 2.5% 30px 2.5%;
 }
 `
 const FlecheDirect = styled.div`

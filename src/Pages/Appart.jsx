@@ -106,8 +106,8 @@ margin-left:10%;
 margin-top:70px;
 @media (max-width: 960px) {
   flex-flow:row-reverse;
-  margin:0px 10px;
-  width:100%;
+  margin:0px 25px;
+  width:95%;
   justify-content:space-between;
   align-items:center;
 }
@@ -126,13 +126,32 @@ height:30px;
 const TagAppart= styled.ul`
 display:flex;
 flex-flow:row nowrap;
-margin-right:10px;
-
+margin-left:-40px;
+@media (max-width: 960px) {
+  margin:10px 0px 0px -20px;
+}
 `
 
 const TagDif= styled.li`
 display:flex;
 margin-right:20px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 142.6%;
+text-align: center;
+color: #FFFFFF;
+width:150px;
+height:100%;
+border-radius:10px;
+background: #FF6060;
+justify-content:center;
+@media (max-width: 960px) {
+  font-size:10px;
+  width:100%;
+  border-radius:5px;
+}
 `
 
 const CollaspPara = styled.p`
@@ -144,6 +163,7 @@ line-height: 142.6%;
 color: #FF6060;
 display:flex;
 justify-content:center;
+margin-left:15px;
 @media (max-width: 960px) {
   font-size:12px;
 }
@@ -172,6 +192,7 @@ display:flex;
 margin:0;
 height:52px;
 align-items:center;
+margin-left:15px;
 @media (max-width: 960px) {
   font-size:13px;
   height:35px;
@@ -198,18 +219,27 @@ justify-content:space-between;
 `
 
 const CollaspUl = styled.ul`
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 142.6%;
-color: #FF6060;
 display:flex;
+flex-flow:column;
+list-style-type : none;
+margin-left:-20px;
 @media (max-width: 960px) {
   font-size:12px;
 }
-
 `
+
+const CollaspLi=styled.li`
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 142.6%;
+color: #FF6060;
+@media (max-width: 960px) {
+  font-size:12px;
+}
+`
+
 const ImgFleche=styled.img`
 @media (max-width: 960px) {
   width:9px;
@@ -242,7 +272,7 @@ Host.propTypes={
 host:PropTypes.string,    
 }
 
-function Appart({ title, cover, pictures, description, rating, location, equipments, tags, index}) {
+function Appart({props, title, cover, pictures, description, rating, location, equipments, tags, index}) {
 const { id } = useParams();
 const profile = BDD.find((item) => item.id === id)
 console.log(profile.description)
@@ -301,8 +331,10 @@ const stars = [];
       </CollaspButton>
       {openE && (
       <div >
-        <CollaspUl>{profile.map((equipments) => (
-              <li key={profile.equipments}>{profile.equipments}</li>
+        <CollaspUl>
+        {profile.equipments?.map((equipment,index) => (
+              <CollaspLi key={`${equipment + index}`}>
+                {equipment}</CollaspLi>
             ))}
         </CollaspUl>
       </div>
@@ -322,10 +354,10 @@ const stars = [];
     <LocationAppart>{profile.location}</LocationAppart>
     </NameYLocation>
     <TagAppart>
-        {profile.tags?.map((tags,index) => (
+        {profile.tags?.map((tag,index) => (
 
-          <TagDif key={index + profile.tags}>
-          {profile.tags} 
+          <TagDif key={`${index + tag}`}>
+          {tag} 
           </TagDif>
           ))} 
       </TagAppart>
@@ -358,7 +390,7 @@ const stars = [];
   rating:PropTypes.number,
   location:PropTypes.string,
   equipments:PropTypes.string,
-  tags:PropTypes.arrayOf(PropTypes.string),
+  tags:PropTypes.array,
  }
 
 export default Appart;
