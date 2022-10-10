@@ -1,0 +1,82 @@
+.ImgHeader{
+padding-top:40px;
+padding-left:40px;
+}
+@media (max-width: 960px) {
+  .ImgHeader{
+width:40%;
+height:47px;
+padding-left:20px;
+}
+}
+
+
+.LinkHeaderA {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 142.6%;
+display: flex;
+flex-flow:row;
+text-decoration:none;
+align-items: flex-end;
+text-align: right;
+color: #FF6060;
+}
+@media only screen and (max-width: 960px) {
+  .LinkHeaderA{
+  font-size:12px;}
+}
+
+
+.LinkHeaderA:hover{
+  text-decoration:underline;
+}
+
+.LinkHeaderP{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 142.6%;
+display: flex;
+flex-flow:row;
+text-decoration:none;
+align-items: flex-end;
+text-align: right;
+color: #FF6060;
+}
+@media only screen and (max-width: 960px) {
+  .LinkHeaderP{
+  font-size:12px;}
+}
+
+
+.LinkHeaderP:hover{
+  text-decoration:underline;
+}
+
+.NavHeader{
+display:flex;
+flex-flow:row;
+justify-content: space-evenly;
+box-sizing: border-box;
+width: 25%;}
+
+@media only screen and (max-width: 960px) {
+  .NavHeader{
+    width:32%;
+  }
+}
+
+
+.HeaderDiv{
+display:flex;
+flex-flow:row;
+justify-content:space-between;
+margin:40px;
+}
+
+@media only screen and (max-width: 960px) {
+  .HeaderDiv{margin:0}}

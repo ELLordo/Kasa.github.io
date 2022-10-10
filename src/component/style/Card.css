@@ -1,0 +1,72 @@
+.CardGeneral{
+display:flex;
+flex-flow:row wrap;
+columns : auto 3;
+justify-content:space-evenly;}
+@media only screen and (max-width: 960px) {
+    .CardGeneral{
+  flex-flow:column;}
+}
+
+
+.CardSpe{
+display:block;
+flex-flow:column;
+height:400px;
+margin:10px 10px 40px 10px;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+border-radius:10px;
+text-decoration:none;}
+
+
+.CardLink{
+display:flex;
+height:400px;
+width: 27%;
+margin:10px 10px 40px 10px;
+border-radius:10px;
+text-decoration:none;}
+
+@media only screen and (max-width: 960px) {
+    .CardLink{
+  width:100%;
+  margin:0 0 40px 0;}
+}
+
+
+.CardImg{
+display:flex;
+width:100%;
+height:100%;
+border-radius:10px;
+object-fit:cover;}
+
+
+.CardFiltre{
+display:flex;
+position:absolute;
+height:400px;
+width: 25.5%;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+border-radius:10px;
+}
+@media only screen and (max-width: 960px) {
+    .CardFiltre{
+        width: 95%;
+    }
+}
+
+.CardTitle{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 142.6%;
+display: flex;
+align-items: flex-end;
+width:70%;
+margin-left:15px;
+color: #FFFFFF;
+margin-top:-80px;
+z-index:1
+}

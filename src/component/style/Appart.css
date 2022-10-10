@@ -1,0 +1,124 @@
+.TitleAppart{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 142.6%;
+display: flex;
+margin-bottom:-15px;
+color: #FF6060;}
+@media only screen and (max-width: 960px) {
+.TitleAppart{
+  font-size:18px;
+  margin-bottom:0;
+  margin-top:-20px;}
+}
+
+
+.NameYLocation{
+display:flex;
+flex-flow:column;}
+@media only screen and (max-width: 960px) {
+.NameYLocation{
+margin-left:20px;}
+}
+
+
+.LocationAppart{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 142.6%;
+display: flex;
+color: #FF6060;}
+@media only screen and (max-width: 960px) {
+  .LocationAppart{
+    font-size:14px;}
+}
+
+
+.SousPictures{
+display: flex;
+justify-content: space-between;
+margin: 100px 60px 20px 20px;
+width:80%;
+margin-left:10%;
+flex-flow:column;}
+@media only screen and (max-width: 960px) {
+.SousPictures{
+  margin: 150px 0px 30px 0px;}
+}
+
+
+.HostYNote{
+display: flex;
+flex-flow:column nowrap;
+justify-content:space-around;
+margin: 10px 60px 20px 20px;
+width:20%;
+margin-left:10%;
+margin-top:70px;}
+@media only screen and (max-width: 960px) {
+.HostYNote{
+  flex-flow:row-reverse;
+  margin:0px 25px;
+  width:95%;
+  justify-content:space-between;
+  align-items:center;}
+}
+
+
+.StarAppart{
+display:flex;
+width:30px;
+height:30px;}
+@media only screen and (max-width: 960px) {
+    .StarAppart{
+  width:15px;
+  height:15px;}
+}
+
+
+.TagAppart{
+display:flex;
+flex-flow:row nowrap;
+margin-left:-40px;}
+@media only screen and (max-width: 960px) {
+    .TagAppart{
+  margin:10px 0px 0px -20px;}
+}
+
+
+.TagDif{
+display:flex;
+margin-right:20px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 142.6%;
+text-align: center;
+color: #FFFFFF;
+width:150px;
+height:100%;
+border-radius:10px;
+background: #FF6060;
+justify-content:center;}
+@media only screen and (max-width: 960px) {
+    .TagDif{
+  font-size:10px;
+  width:100%;
+  border-radius:5px;}
+}
+
+
+
+
+.OrgSousPictures{
+display:flex;
+flex-flow:row;}
+@media only screen and (max-width: 960px) {
+    .OrgSousPictures{
+  flex-flow:column;}
+}

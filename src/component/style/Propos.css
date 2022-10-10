@@ -1,0 +1,18 @@
+.PropoImg{
+border-radius: 25px;
+width:90%;
+object-fit:cover;
+background: #000000;
+mix-blend-mode: darken;
+filter: brightness(70%);}
+@media only screen and (max-width: 960px) {
+    .PropoImg{
+  width:95%;
+  height:223px;}
+}
+
+.ImgDiv{
+display:flex;
+justify-content:center;
+margin: 40px 0px 60px 0px;
+}

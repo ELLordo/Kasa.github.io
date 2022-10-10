@@ -1,0 +1,38 @@
+.NameAppart{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 142.6%;
+display: flex;
+align-items: flex-end;
+text-align: right;
+color: #FF6060;}
+@media only screen and (max-width: 960px) {
+    .NameAppart{
+  font-size:12px;
+  margin-right:10px;
+  width:40%}
+}
+
+
+.ImgAppart{
+border-radius:64px;
+width:64px;
+height:64px;}
+@media only screen and (max-width: 960px) {
+    .ImgAppart{
+  width:32px;
+  height:32px;}
+}
+
+
+.ProfileAppart{
+display:flex;
+flex-flow:row;
+margin-top:10px;
+margin-right:40px;}
+@media only screen and (max-width: 960px) {
+    .ProfileAppart{
+  margin-right:0;}
+}
