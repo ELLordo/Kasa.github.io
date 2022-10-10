@@ -27,6 +27,7 @@ margin: 50px 12%;
 max-width:80%;
 @media (max-width: 960px) {
   width:90%;
+  margin-top:-30px;
 }
 `
 const CollaspPara = styled.p`
@@ -38,6 +39,9 @@ line-height: 142.6%;
 color: #FF6060;
 display:flex;
 justify-content:center;
+@media (max-width: 900px) {
+  font-size:12px;
+}
 `
 
 const CollaspButton= styled.button`
@@ -56,13 +60,19 @@ width:100%;
 margin-top:20px;
 justify-content:space-between;
 @media (max-width: 960px) {
-  
+  font-size:13px;
 }
 `
 
 const CollaspTitleB = styled.p`
 display:flex;
 margin:0;
+`
+const ImgFleche=styled.img`
+@media (max-width: 960px) {
+  width:9px;
+  height:15px;
+}
 `
 
 const CollapsePropos =() => {
@@ -95,9 +105,9 @@ const CollapsePropos =() => {
         <div>
           {/* Changer le sens de la flèche quand le contenu est ouvert ou fermé */}
           {openF === true ? (
-            <img src={flecheHaut} alt="Flèche vers le haut" />
+            <ImgFleche src={flecheHaut} alt="Flèche vers le haut" />
           ) : (
-            <img src={flecheBas} alt="Flèche vers le bas" />
+            <ImgFleche src={flecheBas} alt="Flèche vers le bas" />
           )}
         </div>
       </CollaspButton>
@@ -115,9 +125,9 @@ const CollapsePropos =() => {
         <div>
           {/* Changer le sens de la flèche quand le contenu est ouvert ou fermé */}
           {openR === true ? (
-            <img src={flecheHaut} alt="Flèche vers le haut" />
+            <ImgFleche src={flecheHaut} alt="Flèche vers le haut" />
           ) : (
-            <img src={flecheBas} alt="Flèche vers le bas" />
+            <ImgFleche src={flecheBas} alt="Flèche vers le bas" />
           )}
         </div>
         </CollaspButton>
@@ -135,9 +145,9 @@ const CollapsePropos =() => {
         <div>
           {/* Changer le sens de la flèche quand le contenu est ouvert ou fermé */}
           {openSE === true ? (
-            <img src={flecheHaut} alt="Flèche vers le haut" />
+            <ImgFleche src={flecheHaut} alt="Flèche vers le haut" />
           ) : (
-            <img src={flecheBas} alt="Flèche vers le bas" />
+            <ImgFleche src={flecheBas} alt="Flèche vers le bas" />
           )}
         </div>
         </CollaspButton>
@@ -155,9 +165,9 @@ const CollapsePropos =() => {
         <div>
           {/* Changer le sens de la flèche quand le contenu est ouvert ou fermé */}
           {openSEC === true ? (
-            <img src={flecheHaut} alt="Flèche vers le haut" />
+            <ImgFleche src={flecheHaut} alt="Flèche vers le haut" />
           ) : (
-            <img src={flecheBas} alt="Flèche vers le bas" />
+            <ImgFleche src={flecheBas} alt="Flèche vers le bas" />
           )}
         </div>
         </CollaspButton>

@@ -9,6 +9,9 @@ flex-flow:column;
 background-color: #000000;
 Width :100%;
 Height:209px;
+@media (max-width: 960px) {
+  margin-top:30px;
+}
 
 `
 
