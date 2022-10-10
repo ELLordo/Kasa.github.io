@@ -2,7 +2,7 @@ Routes:
 
 Accueil: http://localhost:3000
 Appartement: http://localhost:3000/apparts/:id
-A Propos: http://localhost:3000/Propos
+A Propos: http://localhost:3000/apropos
 Error404: http://localhost:3000/*
 
 
