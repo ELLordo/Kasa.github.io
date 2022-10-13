@@ -18,8 +18,9 @@ justify-content:center;
 margin:60px;}
 @media only screen and (max-width: 960px) {
     .DivHome{
-    margin: 10%;
-    width: 90%;}
+        margin: 2.5%;
+    width: 95%;
+    display: block;}
 }
 
 
@@ -34,7 +35,8 @@ margin-top: 6%;
 color: #FFFFFF;}
 @media only screen and (max-width: 960px) {
     .TitreHome{
-  font-size:24px;
-  width:40%;
-  margin-left:-35%;}
+      font-size: 24px;
+      width: 40%;
+      margin-left: 20px;
+      margin-top: -37%;}
 }
