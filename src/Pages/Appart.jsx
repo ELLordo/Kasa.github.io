@@ -37,6 +37,7 @@ return(!Exist ? (<div>
 }
 
 function Host({name, picture}) {
+  
     return(<div>
     <div className="ProfileAppart">
             <span className="NameAppart">{name}</span>

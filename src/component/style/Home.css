@@ -13,12 +13,10 @@ filter: brightness(70%);}
 
 
 .DivHome{
-display:flex;
-justify-content:center;
 margin:60px;}
 @media only screen and (max-width: 960px) {
     .DivHome{
-        margin: 2.5%;
+    margin: 2.5%;
     width: 95%;
     display: block;}
 }
@@ -31,7 +29,8 @@ font-style: normal;
 font-weight: 500;
 font-size: 48px;
 line-height: 142.6%;
-margin-top: 6%;
+margin-top: -12%;
+margin-left: 20%;
 color: #FFFFFF;}
 @media only screen and (max-width: 960px) {
     .TitreHome{
